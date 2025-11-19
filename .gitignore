@@ -1,0 +1,75 @@
+# ================================
+# Python & Flask
+# ================================
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+instance/
+.env
+*.env
+venv/
+env/
+.venv/
+
+# Flask cache
+.flaskenv
+*.log
+
+# ================================
+# Jupyter Notebooks
+# ================================
+.ipynb_checkpoints/
+*.ipynb_checkpoints
+
+# Large notebook outputs
+**/*.ipynb_checkpoints
+**/.ipynb_checkpoints
+
+# ================================
+# Models & ML Artifacts
+# ================================
+*.pkl
+*.joblib
+*.h5
+*.model
+*.bin
+*.sav
+
+# Except your final saved model:
+!models/best_model.pkl
+
+# ================================
+# Data Files
+# ================================
+data/raw/*
+data/processed/*
+data/features/*
+
+# Allow sample data templates (if needed)
+!data/raw/.gitkeep
+!data/processed/.gitkeep
+!data/features/.gitkeep
+
+# ================================
+# OS / Editor Files
+# ================================
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# ================================
+# Frontend build files (if deployed)
+# ================================
+node_modules/
+dist/
+build/
+
+# ================================
+# Cache
+# ================================
+.cache/
+*.temp
