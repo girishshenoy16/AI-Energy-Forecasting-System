@@ -56,8 +56,7 @@ def test_predict_next_hour(client):
     assert "predicted_energy_next_hour" in data
     assert data["predicted_energy_next_hour"] == 123.45  # Mocked value
     assert "model_used" in data
-
     assert "timestamp" in data
 
-    
+
 # Run using pytest -v commands in virtual envirnonment.
