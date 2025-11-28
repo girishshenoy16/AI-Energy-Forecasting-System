@@ -214,9 +214,3 @@ Your UI will communicate with the Flask API automatically.
 * Compare multiple ML models
 * Add user authentication
 * Implement batch forecasting
-
----
-
-## ⭐ Support the Project
-
-If you found this project useful, please ⭐ **star the repo** — it motivates further development!
