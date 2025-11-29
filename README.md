@@ -1,9 +1,3 @@
-<p align="center">
-  <img src="screenshots/banner.png" alt="AI Energy Forecasting System Banner" width="100%">
-</p>
-
----
-
 # 🔋 **AI Energy Forecasting System**
 A complete end-to-end **Energy Forecasting Application** featuring:
 
