@@ -1,50 +1,6 @@
-<svg width="1600" height="360" viewBox="0 0 1600 360" fill="none" xmlns="http://www.w3.org/2000/svg">
-
-  <defs>
-    <linearGradient id="grad" x1="0" y1="0" x2="1600" y2="360">
-      <stop offset="0%" stop-color="#0A0F1F" />
-      <stop offset="100%" stop-color="#0F223A" />
-    </linearGradient>
-
-    <filter id="glow">
-      <feGaussianBlur stdDeviation="8" result="coloredBlur"/>
-      <feMerge>
-        <feMergeNode in="coloredBlur"/>
-        <feMergeNode in="SourceGraphic"/>
-      </feMerge>
-    </filter>
-  </defs>
-
-  <!-- Background -->
-  <rect width="1600" height="360" fill="url(#grad)"/>
-
-  <!-- Decorative Grid Lines -->
-  <g opacity="0.15">
-    <line x1="0" y1="60" x2="1600" y2="60" stroke="#4AF1FF"/>
-    <line x1="0" y1="120" x2="1600" y2="120" stroke="#4AF1FF"/>
-    <line x1="0" y1="180" x2="1600" y2="180" stroke="#4AF1FF"/>
-    <line x1="0" y1="240" x2="1600" y2="240" stroke="#4AF1FF"/>
-    <line x1="0" y1="300" x2="1600" y2="300" stroke="#4AF1FF"/>
-  </g>
-
-  <!-- Energy Wave -->
-  <path d="M0 240 C 200 140, 400 340, 600 200 S 1000 100, 1400 260 S 1600 80, 1600 80"
-    stroke="#00FFC6" stroke-width="4" fill="none" opacity="0.55" filter="url(#glow)" />
-
-  <!-- Main Title -->
-  <text x="50%" y="150" text-anchor="middle" fill="#00F7FF" font-size="48" font-family="Segoe UI, Roboto, sans-serif" filter="url(#glow)">
-    AI Energy Forecasting System
-  </text>
-
-  <!-- Subtitle -->
-  <text x="50%" y="215" text-anchor="middle" fill="#A8D9FF" font-size="26" font-family="Segoe UI, Roboto, sans-serif">
-    XGBoost • LSTM • MLP  |  Flask API  |  Data Pipeline  |  Interactive UI
-  </text>
-
-  <!-- Bottom Accent Line -->
-  <rect x="400" y="275" width="800" height="3" fill="#00FFC6" opacity="0.7" filter="url(#glow)"/>
-
-</svg>
+<p align="center">
+  <img src="screenshots/banner.png" alt="AI Energy Forecasting System Banner" width="100%">
+</p>
 
 ---
 
