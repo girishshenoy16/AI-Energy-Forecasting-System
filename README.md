@@ -10,20 +10,30 @@ A complete end-to-end **Energy Forecasting Application** featuring:
 This system predicts **next hour energy usage (kWh)** and provides a clean UI with history, CSV export, timestamp input, and visual organization.
 
 ---
-```markdown
-<!-- Badges -->
-<p align="center">
-  <img src="https://img.shields.io/github/stars/girishshen/ai-energy-forecast?style=flat-square&color=blue" />
-  <img src="https://img.shields.io/github/forks/girishshen/ai-energy-forecast?style=flat-square" />
-  <img src="https://img.shields.io/github/license/girishshen/ai-energy-forecast?style=flat-square" />
-  <img src="https://img.shields.io/badge/Made%20with-Flask-black?style=flat&logo=flask" />
-  <img src="https://img.shields.io/badge/Machine%20Learning-XGBoost-orange?style=flat" />
-</p>
+
+# 🏷️ Badges
+
+![Stars](https://img.shields.io/github/stars/girishshenoy16/ai-energy-forecast?style=flat-square&color=blue)
+
+![Forks](img.shields.io/github/forks/girishshen/ai-energy-forecast?style=flat-square)
+
+![Python](https://img.shields.io/badge/Python-3.10-blue)
+
+![Flask](https://img.shields.io/badge/Made%20with-Flask-black?style=flat&logo=flask)
+
+![XGBoost](https://img.shields.io/badge/Model-XGBoost-orange)
+
+![Testing](https://img.shields.io/badge/Tests-PyTest-yellow)
+
+![Status](https://img.shields.io/badge/Status-Production--Ready-brightgreen)
+
+![License](https://img.shields.io/badge/License-MIT-green)
+
 
 <p align="center">
   <b>🔥 AI-Powered Energy Forecasting System | Machine Learning • Flask API • Modern Frontend • End-to-End Project</b>
 </p>
-```
+
 ---
 
 ## 📸 Screenshots
