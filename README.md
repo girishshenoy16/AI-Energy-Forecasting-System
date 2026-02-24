@@ -33,7 +33,7 @@ This system predicts **next hour energy usage (kWh)** and provides a clean UI wi
 
 ![Netlify](https://img.shields.io/badge/Frontend-Netlify-brightgreen)
 
-![Live Demo](https://img.shields.io/badge/Live-Demo-brightgreen)]
+![Live Demo](https://img.shields.io/badge/Live-Demo-brightgreen)
 
 <p align="center">
   <b>🔥 AI-Powered Energy Forecasting System | Machine Learning • Flask API • Modern Frontend • End-to-End Project</b>
