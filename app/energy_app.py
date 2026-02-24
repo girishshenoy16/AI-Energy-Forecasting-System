@@ -19,7 +19,7 @@ CORS(app)
 
 # LOAD MODEL (guarded)
 try:
-    MODEL = joblib.load(MODELS_DIR / "best_model.pkl")
+    MODEL = joblib.load(MODELS_DIR / "best_model_xgboost.pkl")
     MODEL_TYPE = "xgboost"
     # # If it's XGBoost scikit wrapper
     # try:
@@ -186,7 +186,12 @@ def multistep():
 
 @app.route("/api/health")
 def health():
-    return jsonify({"status": "running", "model": MODEL_TYPE})
+    return jsonify(
+        {
+            "status": "running",
+            "model": MODEL_TYPE
+        }
+    )
 
 if __name__ == "__main__":
     app.run(host="0.0.0.0", port=8000, debug=True)

@@ -1,7 +1,7 @@
 /* Clean Dual-Theme UI + Success Check + Full History */
 console.log("UI Loaded");
 
-const API_BASE = "http://0.0.0.0:8000";
+const API_BASE = "https://ai-energy-forecasting-system.onrender.com";
 const API_PRED = `${API_BASE}/api/predict`;
 
 document.addEventListener("DOMContentLoaded", () => {
