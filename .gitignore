@@ -54,8 +54,8 @@ Thumbs.db
 # Model Files (Optional)
 # ===============================
 # Uncomment if model is large
-models/
-*.pkl
+# models/
+# *.pkl
 
 # ===============================
 # Large Data Files (Optional)
