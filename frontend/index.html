@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>AI Energy Forecast</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <header class="topbar">
+    <div class="brand">
+      <h1>AI Energy Forecast</h1>
+      <p class="subtitle">Simple, accurate, professional predictions</p>
+    </div>
+
+    <!-- Theme toggle -->
+    <label class="switch" title="Dark/Light Toggle">
+      <input id="themeToggle" type="checkbox">
+      <span class="slider">
+        <span class="mode-icon moon">🌙</span>
+        <span class="mode-icon sun">☀️</span>
+      </span>
+    </label>
+  </header>
+
+  <main class="container">
+    <section class="card">
+
+      <h2 class="section-title">Enter Input Data</h2>
+
+      <br><br>
+
+      <!-- Input Grid -->
+      <div class="inputs-grid">
+
+        <!-- Energy -->
+        <div class="input-block icon-input">
+          <label>Current energy usage (kWh)</label>
+          <br><br>
+          <span class="icon">⚡</span>
+          <input id="current_energy" type="number" placeholder="Enter energy…" />
+        </div>
+
+        <!-- Temperature -->
+        <div class="input-block icon-input">
+          <label>Temperature (°C)</label>
+          <br><br>
+          <span class="icon">🌡</span>
+          <input id="temp" type="number" placeholder="Enter temperature…" />
+        </div>
+
+        <!-- Humidity -->
+        <div class="input-block icon-input">
+          <label>Humidity (%)</label>
+          <br><br>
+          <span class="icon">💧</span>
+          <input id="hum" type="number" placeholder="Enter humidity…" />
+        </div>
+
+
+      </div>
+      <br><br>
+
+
+      <!-- Timestamp Field -->
+      <div class="timestamp-row">
+        <div class="input-block full icon-input">
+          <label>Timestamp (optional)</label>
+          <br><br>
+          <span class="icon" style="top: 52%">🕒</span>
+          <input id="ts" type="datetime-local" />
+          <p class="note">If empty → current time is used</p>
+        </div>
+      </div>
+      <br><br>
+
+      <!-- Buttons -->
+      <div class="actions-vertical">
+        <button id="predictBtn" class="btn-primary big-btn full-btn">Predict</button>
+        <button id="clearBtn" class="btn-secondary big-btn full-btn">Clear</button>
+      </div>
+
+      <div id="err" class="error" hidden></div>
+
+      <!-- Result Card -->
+      <div id="resultCard" class="result" hidden>
+
+        <h3 class="section-title">Prediction Result</h3>
+
+        <!-- Success Check -->
+        <div id="successCheck" class="success-check" hidden>
+          ✓ Prediction Successful
+        </div>
+
+        <div class="result-grid">
+
+          <div class="result-panel">
+            <p class="label"><span class="icon-l">📈</span> Predicted energy (next hour):</p>
+            <p id="predictionValue" class="prediction highlighted">--</p>
+          </div>
+
+          <div class="result-panel">
+            <p class="label"><span class="icon-l">🕒</span> Input timestamp:</p>
+            <p id="metaInfo" class="meta">--</p>
+
+            <p class="label" style="margin-top:10px"><span class="icon-l">⚙️</span> Model:
+            <p id="modelName" class="meta">xgboost</p>
+            </p>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- History -->
+      <h3 class="section-title" style="margin-top:24px;">History</h3>
+
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th>🕒 Timestamp</th>
+              <th>⚡ Energy</th>
+              <th>🌡 Temp (°C)</th>
+              <th>💧 Humidity (%)</th>
+              <th>📈 Predicted (kWh)</th>
+            </tr>
+          </thead>
+          <tbody id="historyTableBody"></tbody>
+        </table>
+      </div>
+
+      <!-- History Controls -->
+      <div class="history-actions">
+        <button id="exportBtn" class="btn-secondary stack-btn">Export CSV</button>
+        <button id="clearHistoryBtn" class="btn-secondary stack-btn">Clear History</button>
+
+        <br><br>
+        <div class="api-url-line">
+          API URL → <span id="apiUrlDisplay"></span>
+        </div>
+      </div>
+
+    </section>
+  </main>
+
+  <script src="control.js"></script>
+</body>
+
+</html>
