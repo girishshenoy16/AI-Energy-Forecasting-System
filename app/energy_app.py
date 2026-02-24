@@ -96,13 +96,6 @@ def build_features(current_usage, temp, hum, ts):
     df = pd.DataFrame([[f.get(col, 0.0) for col in XGB_FEATURES]], columns=XGB_FEATURES)
     return df
 
-@app.route("/")
-def home():
-    return send_from_directory(FRONTEND_DIR, "index.html")
-
-@app.route("/<path:path>")
-def static_files(path):
-    return send_from_directory(FRONTEND_DIR, path)
 
 @app.route("/api/predict", methods=["POST"])
 def predict_api():
@@ -192,6 +185,17 @@ def health():
             "model": MODEL_TYPE
         }
     )
+
+
+# Frontend Routes
+@app.route("/")
+def home():
+    return send_from_directory(FRONTEND_DIR, "index.html")
+
+@app.route("/<path:path>")
+def static_files(path):
+    return send_from_directory(FRONTEND_DIR, path)
+
 
 if __name__ == "__main__":
     app.run(host="0.0.0.0", port=8000, debug=True)
